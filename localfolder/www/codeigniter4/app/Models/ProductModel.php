@@ -1,8 +1,7 @@
-//CRUD操作を実装するために、データベースアクティビティを実行するためのモデルクラス をここに書いておく
-
 <?php
 namespace App\Models;
 use CodeIgniter\Model;
+//CRUD操作を実装するために、データベースアクティビティを実行するためのモデルクラス をここに書いておく
 
 class ProductModel extends Model {
 
