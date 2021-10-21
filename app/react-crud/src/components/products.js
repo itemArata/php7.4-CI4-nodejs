@@ -31,7 +31,7 @@ class Products extends React.Component {
 	deleteProduct(id) {
 		if(window.confirm("Are you sure want to delete?")) {
 			fetch('http://localhost/product/' + id, {
-                                method : 'DELETE'
+                                method : 'DELETE',
                                    }).then(response => { 
 					if(response.status === 200) {
 						alert("Product deleted successfully");
