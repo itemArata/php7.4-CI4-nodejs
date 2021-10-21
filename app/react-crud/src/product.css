@@ -1,0 +1,29 @@
+#container {
+	width: 800px;
+	margin: auto;
+}
+/* シャープは詳細度ドットとかもあるよ。cssの適応に優先順位がある
+aaa */
+table {
+	border-collapse: collapse;
+	width: 800px;
+	margin: 10px auto;
+}
+th, td {
+	border: 1px solid #ddd;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+tr:hover {
+	background-color: #ddd;
+}
+th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}

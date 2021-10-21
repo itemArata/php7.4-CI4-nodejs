@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './product.css';
+import Products from './components/products';
+import Create from './components/create';
+import Update from './components/update';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+		<div>
+			<Route exact path='/' component={Products} />
+			<Route path='/create' component={Create} />
+			<Route path='/update/:id' component={Update} />
+		</div>
+	</Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
