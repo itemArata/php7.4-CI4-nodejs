@@ -34,7 +34,7 @@ class Update extends React.Component {
   
   handleSubmit(event) {
 	  event.preventDefault();
-	  alert(this.props.match.params.id);
+	  //alert(this.props.match.params.id);
 	  fetch('http://localhost/product/' + this.props.match.params.id, {
 			method: 'PUT',
 			body: JSON.stringify({
@@ -52,7 +52,7 @@ class Update extends React.Component {
 					alert("Product update successfully.");
 				}
 			});
-    }
+  }
   
   render() {
     return (
@@ -85,7 +85,7 @@ class Update extends React.Component {
 							<input type="submit" value="Submit" />
 						</p>
 				  </form>
-			   </div>
+			 </div>
     );
   }
 }

@@ -3,10 +3,10 @@ namespace App\Controllers;
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
-header("Access-Control-Allow-Methods: POST, GET, PUT, DELETE,OPTIONS");
-header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
-
-
+//header("Access-Control-Allow-Methods: POST, GET, PUT, DELETE, OPTIONS");
+header('Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization');
+header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Allow-Origin: https://cross.com");
 
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\HTTP\RequestInterface;
