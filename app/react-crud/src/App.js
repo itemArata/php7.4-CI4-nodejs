@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import cors from 'cors';
+
+const app = express();
+app.use(cors());
 
 function App() {
   return (
@@ -21,5 +25,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
