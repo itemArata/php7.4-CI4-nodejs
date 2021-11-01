@@ -5,6 +5,7 @@ import './product.css';
 import Products from './components/products';
 import Create from './components/create';
 import Update from './components/update';
+import Error from './components/Error';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
 			<Route exact path='/' component={Products} />
 			<Route path='/create' component={Create} />
 			<Route path='/update/:id' component={Update} />
+			<Route path='/*' component={Error} />
 		</div>
 	</Router>
   </React.StrictMode>,
