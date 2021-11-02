@@ -2,7 +2,7 @@
 # Operating Specific Junk Files
 #-------------------------
 
-/mysql
+mysql/
 node_modules
 writable
 
