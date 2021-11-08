@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 //$routes->get('/', 'Home::index');
 $routes->resource('product');
+$routes->resource('index');
+$routes->resource('login');
+$routes->resource('logout');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
