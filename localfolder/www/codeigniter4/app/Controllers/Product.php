@@ -1,10 +1,15 @@
 <?php
 namespace App\Controllers;
 
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,PATCH");
-//header("Access-Control-Allow-Methods: POST, GET, PUT, DELETE, OPTIONS");
+header("Access-Control-Allow-Origin: http://localhost:3001/");
 header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE,PATCH");
+header("Access-Control-Max-Age: 86400");
+header('content-type: application/json; charset=utf-8');
+header("Access-Control-Allow-Credentials: true");
+
+//header("Access-Control-Allow-Methods: POST, GET, PUT, DELETE, OPTIONS");
+
 
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\HTTP\RequestInterface;

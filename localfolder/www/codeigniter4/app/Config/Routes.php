@@ -25,7 +25,7 @@ $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
- * Route Definitions
+* Route Definitions    
  * --------------------------------------------------------------------
  */
 
@@ -34,9 +34,13 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 //$routes->get('/', 'Home::index');
 $routes->resource('product');
-$routes->resource('index');
-$routes->resource('login');
-$routes->resource('logout');
+
+
+$routes->group("api", function ($routes) {
+    $routes->post("register", "User::register");
+    $routes->post("login", "User::login");
+    $routes->get("profile", "User::details");
+});
 
 /*
  * --------------------------------------------------------------------

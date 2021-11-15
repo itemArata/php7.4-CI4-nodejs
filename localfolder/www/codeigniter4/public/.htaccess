@@ -1,6 +1,10 @@
 # Disable directory browsing
 Options All -Indexes
-
+Header set Access-Control-Allow-Origin 'http://localhost:3001'
+# header set Access-Control-Allow-Headers *
+Header set Access-Control-Allow-Methods POST, GET, OPTIONS, PUT, DELETE,PATCH
+Header set content-type application/json charset=utf-8
+Header set Access-Control-Allow-Credentials true
 # ----------------------------------------------------------------------
 # Rewrite engine
 # ----------------------------------------------------------------------
@@ -15,7 +19,7 @@ Options All -Indexes
 	# change the following line to match the subfolder you need.
 	# http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
 	# RewriteBase /
-
+  
 	# Redirect Trailing Slashes...
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_URI} (.+)/$
